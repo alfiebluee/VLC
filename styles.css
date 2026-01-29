@@ -555,8 +555,22 @@ div.section-header>.section-desc.center-text {
         display: block;
     }
 
+    /* Hero Centering */
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-subtitle {
+        margin: 0 auto 1rem auto;
+    }
+
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .section-title {
@@ -564,15 +578,87 @@ div.section-header>.section-desc.center-text {
         text-align: center;
     }
 
+    .section-desc {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .hero-actions {
         flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
     .hero-actions .btn {
         width: 100%;
         text-align: center;
     }
-}/* Pricing Table Styles */
+
+    /* Intro & Features Centering */
+    .intro-text,
+    .feature-card {
+        text-align: center;
+    }
+
+    .intro-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Units Centering */
+    .split-layout {
+        text-align: center;
+    }
+
+    .split-content .subtitle {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .specs-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .specs-list li {
+        justify-content: center;
+    }
+
+    /* Footer Centering */
+    .footer-grid {
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .footer-brand,
+    .footer-links,
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Pricing Section Mobile Adjustments */
+@media (max-width: 600px) {
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 0.8rem 0.2rem;
+        font-size: 0.85rem;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.5rem;
+    }
+
+    .cta-section .section-title {
+        font-size: 1.8rem;
+    }
+}/* Pricing Table Styles - Re-adding removed block */
 .pricing-section {
     background-color: var(--color-surface);
 }
@@ -633,13 +719,4 @@ div.section-header>.section-desc.center-text {
     margin-left: auto;
     margin-right: auto;
     line-height: 1.6;
-}
-
-@media (max-width: 600px) {
-
-    .pricing-table th,
-    .pricing-table td {
-        padding: 1rem 0.5rem;
-        font-size: 0.9rem;
-    }
 }
